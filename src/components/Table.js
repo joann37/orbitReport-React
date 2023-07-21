@@ -11,12 +11,14 @@ const Table = ({ sat }) => {
      </thead>
      <tbody>
        {sat.map((data, id)=> { 
-        <tr>
+        return( 
+        <tr key={data.id}>
           <td>{data.name}</td>
           <td>{data.typeOfSatellite}</td>
           <td>{data.launchDate}</td>
           <td>{data.status}</td>
         </tr>
+        )
        })}
        
      </tbody>
