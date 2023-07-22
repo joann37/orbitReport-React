@@ -1,3 +1,5 @@
+import styling from "../components/styling.css";
+
 function Banner (){
     return (
         <div>
